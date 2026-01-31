@@ -11,3 +11,7 @@ Thumbs.db
 # Local development
 .env
 .env.local
+
+# Skills files (development only)
+skills*.zip
+skills_extracted/

@@ -8,10 +8,7 @@ Allow: /
 # Sitemap location
 Sitemap: https://tampaconcretepros.com/sitemap.xml
 
-# Crawl-delay (optional, be polite to crawlers)
-Crawl-delay: 1
-
-# Specific bot rules (all allowed)
+# Search engine bots
 User-agent: Googlebot
 Allow: /
 
@@ -30,8 +27,53 @@ Allow: /
 User-agent: YandexBot
 Allow: /
 
+# Social media bots
 User-agent: facebot
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterestbot
+Allow: /
+
+# AI/LLM crawlers (for GEO - Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Block common bad bots
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
