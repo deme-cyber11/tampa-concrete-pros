@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Year Warranty | Tampa Concrete Pros</title>
+    <meta name="description" content="Tampa Concrete Pros offers a 10-year warranty on all concrete work. Learn about our warranty coverage and what's included.">
+    <link rel="canonical" href="https://tampaconcretepros.com/warranty.html">
+    <meta name="theme-color" content="#1B3A4B">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        :root { --color-primary: #1B3A4B; --color-secondary: #1FA2C0; --color-background: #F5F7F8; --color-surface: #E9EDEF; --color-text: #1A2530; --color-text-muted: #5A6B75; --color-text-light: #F5F7F8; --font-display: 'Clash Display', sans-serif; --font-body: 'Outfit', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font-body); line-height: 1.7; color: var(--color-text); background: var(--color-background); }
+        h1, h2, h3 { font-family: var(--font-display); font-weight: 600; }
+        header { background: var(--color-primary); color: var(--color-text-light); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; border-bottom: 4px solid var(--color-secondary); }
+        nav { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 2rem; }
+        .logo { text-decoration: none; color: white; font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; }
+        .logo span { color: var(--color-secondary); }
+        .nav-links { display: flex; gap: 2rem; list-style: none; }
+        .nav-links a { color: white; text-decoration: none; font-weight: 500; }
+        .nav-cta { background: var(--color-secondary); padding: 0.75rem 1.5rem; border-radius: 6px; }
+        .page-hero { margin-top: 74px; background: linear-gradient(150deg, rgba(27,58,75,0.92), rgba(27,58,75,0.75)), url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=2000&q=80'); background-size: cover; color: white; padding: 5rem 2rem; text-align: center; }
+        .page-hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+        .page-hero p { font-size: 1.2rem; opacity: 0.9; }
+        .breadcrumb { max-width: 1000px; margin: 0 auto; padding: 1rem 2rem; font-size: 0.9rem; color: var(--color-text-muted); }
+        .breadcrumb a { color: var(--color-secondary); text-decoration: none; }
+        .warranty-badge { max-width: 1000px; margin: -3rem auto 0; padding: 0 2rem; position: relative; z-index: 10; }
+        .badge-card { background: white; border-radius: 16px; padding: 3rem; box-shadow: 0 10px 40px rgba(27,58,75,0.15); display: flex; align-items: center; gap: 2rem; }
+        .badge-icon { width: 100px; height: 100px; background: var(--color-secondary); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .badge-icon svg { width: 50px; height: 50px; stroke: white; fill: none; }
+        .badge-text h2 { font-size: 2rem; color: var(--color-primary); margin-bottom: 0.5rem; }
+        .badge-text p { color: var(--color-text-muted); font-size: 1.1rem; }
+        .content { max-width: 1000px; margin: 0 auto; padding: 4rem 2rem; }
+        .content h2 { font-size: 1.75rem; color: var(--color-primary); margin: 2.5rem 0 1rem; }
+        .content h2::after { content: ''; display: block; width: 50px; height: 3px; background: var(--color-secondary); margin-top: 0.5rem; }
+        .content p, .content li { color: var(--color-text-muted); margin-bottom: 1rem; font-size: 1.05rem; }
+        .coverage-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin: 2rem 0; }
+        .coverage-item { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(27,58,75,0.08); display: flex; align-items: flex-start; gap: 1rem; }
+        .coverage-item.covered { border-left: 4px solid #22C55E; }
+        .coverage-item.excluded { border-left: 4px solid #EF4444; }
+        .coverage-item svg { width: 24px; height: 24px; flex-shrink: 0; margin-top: 2px; }
+        .coverage-item.covered svg { color: #22C55E; }
+        .coverage-item.excluded svg { color: #EF4444; }
+        .coverage-item h4 { color: var(--color-primary); margin-bottom: 0.25rem; }
+        .coverage-item p { margin: 0; font-size: 0.95rem; }
+        .claim-steps { counter-reset: step; list-style: none; margin: 2rem 0; }
+        .claim-steps li { position: relative; padding-left: 4rem; margin-bottom: 1.5rem; }
+        .claim-steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0; width: 40px; height: 40px; background: var(--color-secondary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 1.1rem; }
+        .cta-section { padding: 4rem 2rem; background: linear-gradient(135deg, var(--color-secondary), #17869c); text-align: center; color: white; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 1rem; }
+        .cta-section p { margin-bottom: 2rem; opacity: 0.95; }
+        .btn { display: inline-flex; padding: 1rem 2rem; border-radius: 6px; font-weight: 600; text-decoration: none; text-transform: uppercase; }
+        .btn-white { background: white; color: var(--color-primary); }
+        footer { background: var(--color-primary); color: var(--color-text-light); padding: 2rem; text-align: center; }
+        footer a { color: var(--color-secondary); text-decoration: none; }
+        @media (max-width: 768px) { .nav-links { display: none; } .badge-card { flex-direction: column; text-align: center; } .coverage-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">Tampa Concrete <span>Pros</span></a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/services/driveway-installation.html">Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="tel:8135552847" class="nav-cta">Call Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <h1>10-Year Warranty</h1>
+        <p>Your investment is protected with our industry-leading warranty coverage.</p>
+    </section>
+
+    <div class="warranty-badge">
+        <div class="badge-card">
+            <div class="badge-icon">
+                <svg viewBox="0 0 24 24" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+            </div>
+            <div class="badge-text">
+                <h2>10-Year Written Warranty</h2>
+                <p>Every project completed by Tampa Concrete Pros is backed by our comprehensive 10-year warranty, covering both materials and workmanship. This warranty is fully transferable if you sell your property.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="breadcrumb"><a href="/">Home</a> &gt; Warranty</div>
+
+    <div class="content">
+        <h2>What's Covered</h2>
+        <div class="coverage-grid">
+            <div class="coverage-item covered">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><h4>Structural Cracks</h4><p>Cracks that affect the integrity of the concrete structure</p></div>
+            </div>
+            <div class="coverage-item covered">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><h4>Settling & Sinking</h4><p>Uneven settling due to improper base preparation</p></div>
+            </div>
+            <div class="coverage-item covered">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><h4>Material Defects</h4><p>Issues arising from defective concrete materials</p></div>
+            </div>
+            <div class="coverage-item covered">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <div><h4>Workmanship Issues</h4><p>Problems resulting from installation errors</p></div>
+            </div>
+        </div>
+
+        <h2>What's Not Covered</h2>
+        <div class="coverage-grid">
+            <div class="coverage-item excluded">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <div><h4>Cosmetic Hairline Cracks</h4><p>Minor surface cracks that don't affect structure</p></div>
+            </div>
+            <div class="coverage-item excluded">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <div><h4>Normal Weathering</h4><p>Natural color changes and surface wear over time</p></div>
+            </div>
+            <div class="coverage-item excluded">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <div><h4>Improper Use</h4><p>Damage from excessive weight or misuse</p></div>
+            </div>
+            <div class="coverage-item excluded">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                <div><h4>Acts of Nature</h4><p>Hurricane, flood, or earthquake damage</p></div>
+            </div>
+        </div>
+
+        <h2>How to File a Claim</h2>
+        <ol class="claim-steps">
+            <li><strong>Contact Us</strong><br>Call (813) 555-2847 or email info@tampaconcretepros.com with your warranty concern.</li>
+            <li><strong>Provide Documentation</strong><br>Share photos of the issue and your original project documentation.</li>
+            <li><strong>Site Inspection</strong><br>We'll schedule a visit to assess the issue within 5 business days.</li>
+            <li><strong>Resolution</strong><br>If covered, we'll repair or replace the affected area at no cost to you.</li>
+        </ol>
+
+        <h2>Warranty Transfer</h2>
+        <p>Our warranty is fully transferable to new property owners. If you sell your home, simply notify us in writing with the new owner's information, and the remaining warranty coverage transfers automatically.</p>
+    </div>
+
+    <section class="cta-section">
+        <h2>Questions About Your Warranty?</h2>
+        <p>Our team is here to help with any warranty questions or claims.</p>
+        <a href="tel:8135552847" class="btn btn-white">Call (813) 555-2847</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Tampa Concrete Pros. All rights reserved. | <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms-of-service.html">Terms</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+{
+    "name": "Tampa Concrete Pros",
+    "short_name": "TCP",
+    "description": "Tampa Bay's trusted concrete contractors. Licensed & insured. Professional driveway installation, replacement, and decorative concrete services.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#F5F7F8",
+    "theme_color": "#1B3A4B",
+    "orientation": "portrait-primary",
+    "scope": "/",
+    "lang": "en-US",
+    "categories": ["business", "home improvement", "construction"],
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any"
+        },
+        {
+            "src": "/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "Get Free Quote",
+            "short_name": "Quote",
+            "description": "Request a free concrete project estimate",
+            "url": "/contact.html",
+            "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+        },
+        {
+            "name": "Call Now",
+            "short_name": "Call",
+            "description": "Call Tampa Concrete Pros",
+            "url": "tel:8135552847"
+        },
+        {
+            "name": "Our Services",
+            "short_name": "Services",
+            "description": "View our concrete services",
+            "url": "/services/driveway-installation.html"
+        }
+    ],
+    "related_applications": [],
+    "prefer_related_applications": false
+}

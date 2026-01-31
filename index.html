@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampa Concrete Pros | Licensed & Insured Concrete Contractors</title>
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    <meta name="description" content="Tampa's trusted concrete driveway experts. Licensed & insured. Free quotes on installation, replacement & stamped concrete. Call (813) 555-2847.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://tampaconcretepros.com/">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Tampa Concrete Pros | Licensed & Insured Concrete Contractors">
+    <meta property="og:description" content="Tampa's trusted concrete driveway experts. Licensed & insured. Free quotes on installation, replacement & stamped concrete.">
+    <meta property="og:image" content="https://tampaconcretepros.com/images/og-image.jpg">
+    <meta property="og:url" content="https://tampaconcretepros.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Tampa Concrete Pros">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tampa Concrete Pros | Licensed & Insured Concrete Contractors">
+    <meta name="twitter:description" content="Tampa's trusted concrete driveway experts. Licensed & insured. Free quotes on installation, replacement & stamped concrete.">
+    <meta name="twitter:image" content="https://tampaconcretepros.com/images/og-image.jpg">
+
+    <!-- Geo Location Tags for Local SEO -->
+    <meta name="geo.region" content="US-FL">
+    <meta name="geo.placename" content="Tampa">
+    <meta name="geo.position" content="27.9506;-82.4572">
+    <meta name="ICBM" content="27.9506, -82.4572">
+
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="author" content="Tampa Concrete Pros">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="theme-color" content="#1B3A4B">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+    <style>
+        /* Coastal Pro Design System - Tampa Concrete Pros */
+        :root {
+            /* Primary palette - Deep Navy & Teal */
+            --color-primary: #1B3A4B;
+            --color-secondary: #1FA2C0;
+            --color-accent: #4A6670;
+
+            /* Backgrounds */
+            --color-background: #F5F7F8;
+            --color-surface: #E9EDEF;
+            --color-surface-dark: #1B3A4B;
+
+            /* Text colors */
+            --color-text: #1A2530;
+            --color-text-muted: #5A6B75;
+            --color-text-light: #F5F7F8;
+
+            /* Functional */
+            --color-border: #C8D1D6;
+            --color-shadow: rgba(27, 58, 75, 0.12);
+
+            /* Typography */
+            --font-display: 'Clash Display', 'Outfit', sans-serif;
+            --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+            /* Spacing */
+            --section-padding: 6rem 2rem;
+            --border-thick: 4px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: var(--font-body);
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.7;
+            color: var(--color-text);
+            background: var(--color-background);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 600;
+            line-height: 1.2;
+        }
+
+        /* Header */
+        header {
+            background: var(--color-surface-dark);
+            color: var(--color-text-light);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(27, 58, 75, 0.15);
+            border-bottom: var(--border-thick) solid var(--color-secondary);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo-icon {
+            width: 45px;
+            height: 45px;
+            background: var(--color-secondary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo-text span {
+            color: var(--color-secondary);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links > li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Dropdown Menu Styles */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown > a {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .dropdown-arrow {
+            font-size: 0.7rem;
+            transition: transform 0.3s;
+        }
+
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: var(--color-background);
+            min-width: 280px;
+            box-shadow: 0 4px 20px rgba(27, 58, 75, 0.15);
+            border-radius: 0 0 8px 8px;
+            padding: 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            margin-top: 1rem;
+            border-top: var(--border-thick) solid var(--color-secondary);
+            overflow: hidden;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: var(--color-text);
+            font-weight: 500;
+            transition: all 0.2s;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .dropdown-menu a:last-child {
+            border-bottom: none;
+        }
+
+        .dropdown-menu a:hover {
+            background: var(--color-surface);
+            color: var(--color-secondary);
+            opacity: 1;
+            padding-left: 2rem;
+        }
+
+        .dropdown-menu-areas {
+            min-width: 420px;
+        }
+
+        .dropdown:hover .dropdown-menu-areas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .dropdown-menu-areas a {
+            padding: 0.75rem 1.25rem;
+            font-size: 0.95rem;
+            border-bottom: 1px solid var(--color-border);
+            border-right: 1px solid var(--color-border);
+        }
+
+        .dropdown-menu-areas a:nth-child(2n) {
+            border-right: none;
+        }
+
+        .dropdown-menu-areas a:nth-last-child(-n+2) {
+            border-bottom: none;
+        }
+
+        .dropdown-menu-areas a:hover {
+            padding-left: 1.5rem;
+        }
+
+        .nav-cta {
+            background: var(--color-secondary);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background: #178a9e;
+            opacity: 1 !important;
+            transform: translateY(-1px);
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section - Coastal Pro */
+        .hero {
+            margin-top: 74px;
+            background: linear-gradient(150deg, rgba(27, 58, 75, 0.92) 0%, rgba(27, 58, 75, 0.75) 100%),
+                        url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--color-text-light);
+            padding: 8rem 2rem 7rem;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.02;
+            pointer-events: none;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-secondary) 40%, transparent 40%);
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            line-height: 1.08;
+            letter-spacing: -0.02em;
+        }
+
+        .hero h1 span {
+            color: var(--color-secondary);
+            display: block;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 540px;
+            line-height: 1.8;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.1rem 2.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--color-secondary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #178a9e;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(31, 162, 192, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--color-text-light);
+            border: 2px solid var(--color-text-light);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-text-light);
+            color: var(--color-primary);
+            transform: translateY(-2px);
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--color-surface);
+            padding: 0;
+            text-align: center;
+            border-bottom: none;
+        }
+
+        .trust-items {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0;
+        }
+
+        .trust-item {
+            padding: 2.5rem 2rem;
+            border-right: 1px solid var(--color-border);
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .trust-item:last-child {
+            border-right: none;
+        }
+
+        .trust-item:hover {
+            background: var(--color-background);
+        }
+
+        .trust-item::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: var(--color-secondary);
+            transition: width 0.3s ease;
+        }
+
+        .trust-item:hover::before {
+            width: 60%;
+        }
+
+        .trust-icon {
+            width: 32px;
+            height: 32px;
+            margin-bottom: 0.75rem;
+            color: var(--color-secondary);
+            display: inline-block;
+        }
+
+        .trust-label {
+            display: block;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--color-primary);
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .trust-detail {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Services Preview */
+        .services-preview {
+            padding: var(--section-padding);
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--color-secondary);
+            margin-top: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.15rem;
+            color: var(--color-text-muted);
+            margin-bottom: 3.5rem;
+            max-width: 650px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--color-shadow);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--color-secondary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(27, 58, 75, 0.15);
+        }
+
+        .service-icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--color-secondary), #17869c);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .service-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: white;
+            fill: none;
+            stroke-width: 2;
+        }
+
+        .service-card h3 {
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-primary);
+        }
+
+        .service-card p {
+            color: var(--color-text-muted);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-link {
+            color: var(--color-secondary);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.95rem;
+        }
+
+        .service-link svg {
+            width: 18px;
+            height: 18px;
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover .service-link svg {
+            transform: translateX(4px);
+        }
+
+        /* Locations Section */
+        .locations {
+            padding: var(--section-padding);
+            background: var(--color-primary);
+            color: var(--color-text-light);
+        }
+
+        .locations .section-title {
+            color: white;
+            text-align: center;
+        }
+
+        .locations .section-title::after {
+            margin: 1rem auto 0;
+        }
+
+        .locations .section-subtitle {
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .locations-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .location-card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 1.75rem;
+            border-radius: 10px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .location-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-4px);
+            border-color: var(--color-secondary);
+        }
+
+        .location-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .location-card p {
+            font-size: 0.9rem;
+            opacity: 0.75;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            padding: var(--section-padding);
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .why-us-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-primary);
+        }
+
+        .why-us-content h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--color-secondary);
+            margin-top: 1rem;
+        }
+
+        .why-us-content p {
+            font-size: 1.1rem;
+            color: var(--color-text-muted);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .feature-list svg {
+            width: 24px;
+            height: 24px;
+            color: var(--color-secondary);
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .why-us-image {
+            background: var(--color-surface);
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .why-us-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: var(--section-padding);
+            background: var(--color-surface);
+        }
+
+        .testimonials .section-title,
+        .testimonials .section-subtitle {
+            text-align: center;
+        }
+
+        .testimonials .section-title::after {
+            margin: 1rem auto 0;
+        }
+
+        .testimonials .section-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .testimonials-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px var(--color-shadow);
+            position: relative;
+        }
+
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 1.5rem;
+            left: 2rem;
+            font-size: 4rem;
+            font-family: var(--font-display);
+            color: var(--color-secondary);
+            opacity: 0.3;
+            line-height: 1;
+        }
+
+        .stars {
+            display: flex;
+            gap: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .stars svg {
+            width: 20px;
+            height: 20px;
+            fill: #FFB800;
+        }
+
+        .testimonial-card p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--color-secondary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .author-info h4 {
+            font-size: 1rem;
+            color: var(--color-primary);
+        }
+
+        .author-info span {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 5rem 2rem;
+            background: linear-gradient(135deg, var(--color-secondary) 0%, #17869c 100%);
+            text-align: center;
+            color: white;
+        }
+
+        .cta-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-section .btn-primary {
+            background: white;
+            color: var(--color-primary);
+        }
+
+        .cta-section .btn-primary:hover {
+            background: var(--color-background);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: var(--color-text-light);
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand h3 span {
+            color: var(--color-secondary);
+        }
+
+        .footer-brand p {
+            opacity: 0.8;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-section h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+            color: var(--color-secondary);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--color-secondary);
+        }
+
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .footer-contact svg {
+            width: 20px;
+            height: 20px;
+            color: var(--color-secondary);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 3rem auto 0;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .footer-bottom a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--color-secondary);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero p {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .cta-buttons {
+                justify-content: center;
+            }
+
+            .trust-items {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .trust-item:nth-child(4),
+            .trust-item:nth-child(5) {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .locations-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .why-us-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonials-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--color-primary);
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1.5rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .dropdown-menu,
+            .dropdown-menu-areas {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                margin-top: 1rem;
+                display: none;
+            }
+
+            .dropdown:hover .dropdown-menu,
+            .dropdown:hover .dropdown-menu-areas {
+                display: block;
+            }
+
+            .hero {
+                padding: 5rem 1.5rem 4rem;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .trust-items {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .trust-item:nth-child(5) {
+                display: none;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .locations-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .trust-items {
+                grid-template-columns: 1fr;
+            }
+
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <!-- Schema.org LocalBusiness markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Tampa Concrete Pros",
+        "image": "https://tampaconcretepros.com/images/og-image.jpg",
+        "telephone": "(813) 555-2847",
+        "email": "info@tampaconcretepros.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "456 Bay Street",
+            "addressLocality": "Tampa",
+            "addressRegion": "FL",
+            "postalCode": "33602",
+            "addressCountry": "US"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 27.9506,
+            "longitude": -82.4572
+        },
+        "url": "https://tampaconcretepros.com",
+        "priceRange": "$$",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "07:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "08:00",
+                "closes": "15:00"
+            }
+        ],
+        "areaServed": [
+            {"@type": "City", "name": "Tampa"},
+            {"@type": "City", "name": "South Tampa"},
+            {"@type": "City", "name": "Brandon"},
+            {"@type": "City", "name": "Wesley Chapel"},
+            {"@type": "City", "name": "New Tampa"}
+        ],
+        "sameAs": []
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5L19 8l-7 3.5L5 8l7-3.5zM4 9.5l7 3.5v7l-7-3.5v-7zm16 0v7l-7 3.5v-7l7-3.5z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Tampa Concrete <span>Pros</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <span class="dropdown-arrow">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="/services/driveway-installation.html">Driveway Installation</a>
+                        <a href="/services/driveway-replacement.html">Driveway Replacement</a>
+                        <a href="/services/stamped-concrete.html">Stamped Concrete</a>
+                        <a href="/services/patios-walkways.html">Patios & Walkways</a>
+                        <a href="/services/pool-decks.html">Pool Decks</a>
+                        <a href="/services/commercial.html">Commercial Concrete</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Service Areas <span class="dropdown-arrow">&#9660;</span></a>
+                    <div class="dropdown-menu dropdown-menu-areas">
+                        <a href="/locations/south-tampa.html">South Tampa</a>
+                        <a href="/locations/hyde-park.html">Hyde Park</a>
+                        <a href="/locations/westchase.html">Westchase</a>
+                        <a href="/locations/carrollwood.html">Carrollwood</a>
+                        <a href="/locations/temple-terrace.html">Temple Terrace</a>
+                        <a href="/locations/brandon.html">Brandon</a>
+                        <a href="/locations/riverview.html">Riverview</a>
+                        <a href="/locations/wesley-chapel.html">Wesley Chapel</a>
+                        <a href="/locations/new-tampa.html">New Tampa</a>
+                        <a href="/locations/seminole-heights.html">Seminole Heights</a>
+                        <a href="/locations/ybor-city.html">Ybor City</a>
+                        <a href="/locations/channelside.html">Channelside</a>
+                    </div>
+                </li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <li><a href="tel:8135552847" class="nav-cta">Call Now</a></li>
+            </ul>
+            <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+                &#9776;
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Tampa Bay's Trusted <span>Concrete Experts</span></h1>
+                <p>Professional concrete driveway installation, replacement, and decorative services. Licensed, insured, and backed by a 10-year warranty. Serving the greater Tampa Bay area.</p>
+                <div class="cta-buttons">
+                    <a href="tel:8135552847" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        (813) 555-2847
+                    </a>
+                    <a href="/contact.html" class="btn btn-secondary">Get Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trust-bar">
+        <div class="trust-items">
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <path d="M9 12l2 2 4-4"/>
+                </svg>
+                <span class="trust-label">Licensed & Insured</span>
+                <span class="trust-detail">State Certified</span>
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12,6 12,12 16,14"/>
+                </svg>
+                <span class="trust-label">10+ Years</span>
+                <span class="trust-detail">Local Experience</span>
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                </svg>
+                <span class="trust-label">5-Star Rated</span>
+                <span class="trust-detail">100+ Reviews</span>
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0110 0v4"/>
+                </svg>
+                <span class="trust-label">10-Year Warranty</span>
+                <span class="trust-detail">Written Guarantee</span>
+            </div>
+            <div class="trust-item">
+                <svg class="trust-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                </svg>
+                <span class="trust-label">Free Estimates</span>
+                <span class="trust-detail">No Obligation</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-preview">
+        <h2 class="section-title">Our Concrete Services</h2>
+        <p class="section-subtitle">From new installations to complete replacements, we deliver quality concrete work that stands the test of time in Florida's climate.</p>
+
+        <div class="services-grid">
+            <a href="/services/driveway-installation.html" class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                </div>
+                <h3>Driveway Installation</h3>
+                <p>New concrete driveways built to last. Expert preparation, quality materials, and precision finishing for a driveway that enhances your home's curb appeal.</p>
+                <span class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+
+            <a href="/services/driveway-replacement.html" class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+                </div>
+                <h3>Driveway Replacement</h3>
+                <p>Remove old, damaged concrete and install a fresh, durable driveway. We handle complete tearout and disposal with minimal disruption to your property.</p>
+                <span class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+
+            <a href="/services/stamped-concrete.html" class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+                </div>
+                <h3>Stamped Concrete</h3>
+                <p>Add beauty and value with decorative stamped patterns. Choose from stone, brick, slate, and custom designs that complement your home's architecture.</p>
+                <span class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+
+            <a href="/services/patios-walkways.html" class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3>Patios & Walkways</h3>
+                <p>Extend your outdoor living space with beautiful concrete patios and walkways. Perfect for entertaining, relaxation, and enhancing property value.</p>
+                <span class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+
+            <a href="/services/pool-decks.html" class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24"><path d="M2 12h2a2 2 0 012 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 002 2h2"/><path d="M2 6h20"/></svg>
+                </div>
+                <h3>Pool Decks</h3>
+                <p>Slip-resistant, cool-to-the-touch pool decks designed for Florida's heat. We create safe, attractive surfaces that complement your pool area.</p>
+                <span class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+
+            <a href="/services/commercial.html" class="service-card">
+                <div class="service-icon">
+                    <svg viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M8 10h.01M16 10h.01M12 10h.01M8 14h.01M16 14h.01M12 14h.01"/></svg>
+                </div>
+                <h3>Commercial Concrete</h3>
+                <p>Heavy-duty concrete solutions for businesses, parking lots, and commercial properties. Built to handle high traffic and heavy loads.</p>
+                <span class="service-link">Learn More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </a>
+        </div>
+    </section>
+
+    <section class="locations">
+        <h2 class="section-title">Serving the Tampa Bay Area</h2>
+        <p class="section-subtitle">We provide professional concrete services throughout Tampa and surrounding communities.</p>
+
+        <div class="locations-grid">
+            <a href="/locations/south-tampa.html" class="location-card">
+                <h3>South Tampa</h3>
+                <p>Palma Ceia, Davis Islands & more</p>
+            </a>
+            <a href="/locations/hyde-park.html" class="location-card">
+                <h3>Hyde Park</h3>
+                <p>Hyde Park Village, SoHo & more</p>
+            </a>
+            <a href="/locations/westchase.html" class="location-card">
+                <h3>Westchase</h3>
+                <p>Countryway, Baybridge & more</p>
+            </a>
+            <a href="/locations/carrollwood.html" class="location-card">
+                <h3>Carrollwood</h3>
+                <p>Lake Magdalene, Northdale & more</p>
+            </a>
+            <a href="/locations/temple-terrace.html" class="location-card">
+                <h3>Temple Terrace</h3>
+                <p>Terrace Park, Forest Hills & more</p>
+            </a>
+            <a href="/locations/brandon.html" class="location-card">
+                <h3>Brandon</h3>
+                <p>Bloomingdale, Valrico & more</p>
+            </a>
+            <a href="/locations/riverview.html" class="location-card">
+                <h3>Riverview</h3>
+                <p>Boyette, Summerfield & more</p>
+            </a>
+            <a href="/locations/wesley-chapel.html" class="location-card">
+                <h3>Wesley Chapel</h3>
+                <p>The Grove, Wiregrass & more</p>
+            </a>
+            <a href="/locations/new-tampa.html" class="location-card">
+                <h3>New Tampa</h3>
+                <p>Tampa Palms, Pebble Creek & more</p>
+            </a>
+            <a href="/locations/seminole-heights.html" class="location-card">
+                <h3>Seminole Heights</h3>
+                <p>Old Seminole Heights & more</p>
+            </a>
+            <a href="/locations/ybor-city.html" class="location-card">
+                <h3>Ybor City</h3>
+                <p>Historic Ybor, East Ybor & more</p>
+            </a>
+            <a href="/locations/channelside.html" class="location-card">
+                <h3>Channelside</h3>
+                <p>Channel District, Downtown & more</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="why-us">
+        <div class="why-us-grid">
+            <div class="why-us-content">
+                <h2>Why Tampa Homeowners Choose Us</h2>
+                <p>With over a decade of experience in the Tampa Bay area, we understand the unique challenges Florida's climate presents for concrete work. Our team delivers exceptional results backed by industry-leading warranties.</p>
+                <ul class="feature-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span><strong>Florida Climate Expertise</strong> - Concrete mixes and techniques designed for heat, humidity, and heavy rain</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span><strong>Transparent Pricing</strong> - Detailed written quotes with no hidden fees or surprise charges</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span><strong>On-Time Completion</strong> - We respect your schedule and complete projects when promised</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span><strong>Clean Work Sites</strong> - Daily cleanup and thorough final walkthrough on every project</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                        <span><strong>10-Year Warranty</strong> - Written warranty covering materials and workmanship</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="why-us-image">
+                <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=800&q=80" alt="Professional concrete work in Tampa" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <p class="section-subtitle">Join hundreds of satisfied Tampa Bay homeowners who trust us with their concrete projects.</p>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                </div>
+                <p>Tampa Concrete Pros did an amazing job on our driveway. The crew was professional, showed up on time, and the finished product exceeded our expectations. Highly recommend!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">MR</div>
+                    <div class="author-info">
+                        <h4>Michael R.</h4>
+                        <span>South Tampa</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                </div>
+                <p>We got quotes from several companies for our pool deck, and Tampa Concrete Pros offered the best value. The stamped concrete looks beautiful and stays cool even in summer!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">SJ</div>
+                    <div class="author-info">
+                        <h4>Sandra J.</h4>
+                        <span>Westchase</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                </div>
+                <p>From estimate to completion, the process was smooth and stress-free. They replaced our cracked driveway and extended our patio. Quality work at a fair price!</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">DT</div>
+                    <div class="author-info">
+                        <h4>David T.</h4>
+                        <span>Brandon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <h2>Ready to Transform Your Property?</h2>
+        <p>Get a free, no-obligation quote for your concrete project. Our team is ready to help you create the driveway, patio, or pool deck of your dreams.</p>
+        <a href="tel:8135552847" class="btn btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            Call (813) 555-2847
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Tampa Concrete <span>Pros</span></h3>
+                <p>Tampa Bay's trusted concrete contractors. Licensed, insured, and committed to quality workmanship on every project.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services/driveway-installation.html">Driveway Installation</a></li>
+                    <li><a href="/services/driveway-replacement.html">Driveway Replacement</a></li>
+                    <li><a href="/services/stamped-concrete.html">Stamped Concrete</a></li>
+                    <li><a href="/services/patios-walkways.html">Patios & Walkways</a></li>
+                    <li><a href="/services/pool-decks.html">Pool Decks</a></li>
+                    <li><a href="/services/commercial.html">Commercial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li><a href="/locations/south-tampa.html">South Tampa</a></li>
+                    <li><a href="/locations/hyde-park.html">Hyde Park</a></li>
+                    <li><a href="/locations/westchase.html">Westchase</a></li>
+                    <li><a href="/locations/carrollwood.html">Carrollwood</a></li>
+                    <li><a href="/locations/brandon.html">Brandon</a></li>
+                    <li><a href="/locations/wesley-chapel.html">Wesley Chapel</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h4>Contact Us</h4>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    (813) 555-2847
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    info@tampaconcretepros.com
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                    Mon-Fri: 7AM-6PM, Sat: 8AM-3PM
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tampa Concrete Pros. All rights reserved.</p>
+            <p>
+                <a href="/privacy-policy.html">Privacy Policy</a> |
+                <a href="/terms-of-service.html">Terms of Service</a> |
+                <a href="/sitemap.html">Sitemap</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

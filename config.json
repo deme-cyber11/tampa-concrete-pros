@@ -1,0 +1,134 @@
+{
+  "business": {
+    "name": "Tampa Concrete Pros",
+    "shortName": "TCP",
+    "tagline": "Licensed & Insured",
+    "foundedYear": "2012",
+    "warrantyYears": "10",
+    "priceRange": "$$"
+  },
+  "contact": {
+    "phone": "(813) 555-2847",
+    "phoneRaw": "8135552847",
+    "email": "info@tampaconcretepros.com",
+    "domain": "tampaconcretepros.com",
+    "domainFull": "https://tampaconcretepros.com"
+  },
+  "location": {
+    "primaryCity": "Tampa",
+    "region": "Tampa Bay Area",
+    "state": "Florida",
+    "stateCode": "FL",
+    "latitude": "27.9506",
+    "longitude": "-82.4572",
+    "streetAddress": "456 Bay Street",
+    "postalCode": "33602",
+    "areaCode": "813",
+    "serviceRadius": "35 miles",
+    "geoRegion": "US-FL"
+  },
+  "hours": {
+    "weekdays": "Monday-Friday: 7:00 AM - 6:00 PM",
+    "saturday": "Saturday: 8:00 AM - 3:00 PM",
+    "sunday": "Sunday: Closed"
+  },
+  "services": [
+    {"id": "driveway-installation", "name": "Driveway Installation", "icon": "plus-circle"},
+    {"id": "driveway-replacement", "name": "Driveway Replacement", "icon": "refresh"},
+    {"id": "stamped-concrete", "name": "Stamped Concrete", "icon": "grid"},
+    {"id": "patios-walkways", "name": "Patios & Walkways", "icon": "home"},
+    {"id": "pool-decks", "name": "Pool Decks", "icon": "droplet"},
+    {"id": "commercial", "name": "Commercial Concrete", "icon": "building"}
+  ],
+  "serviceAreas": [
+    {
+      "id": "south-tampa",
+      "name": "South Tampa",
+      "neighborhoods": ["Palma Ceia", "Beach Park", "Bayshore Beautiful", "Davis Islands"]
+    },
+    {
+      "id": "hyde-park",
+      "name": "Hyde Park",
+      "neighborhoods": ["Hyde Park Village", "SoHo", "Swann Estates", "Rome Avenue"]
+    },
+    {
+      "id": "westchase",
+      "name": "Westchase",
+      "neighborhoods": ["Countryway", "Baybridge", "Westchester", "Glencliff"]
+    },
+    {
+      "id": "carrollwood",
+      "name": "Carrollwood",
+      "neighborhoods": ["Lake Magdalene", "Northdale", "Carrollwood Village", "Lake Carroll"]
+    },
+    {
+      "id": "temple-terrace",
+      "name": "Temple Terrace",
+      "neighborhoods": ["Temple Terrace Golf", "Terrace Park", "Forest Hills", "Riverhills"]
+    },
+    {
+      "id": "brandon",
+      "name": "Brandon",
+      "neighborhoods": ["Bloomingdale", "Valrico", "FishHawk Ranch", "Riverview South"]
+    },
+    {
+      "id": "riverview",
+      "name": "Riverview",
+      "neighborhoods": ["Boyette", "Summerfield", "Alafia", "Panther Trace"]
+    },
+    {
+      "id": "wesley-chapel",
+      "name": "Wesley Chapel",
+      "neighborhoods": ["The Grove", "Wiregrass", "Meadow Pointe", "Seven Oaks"]
+    },
+    {
+      "id": "new-tampa",
+      "name": "New Tampa",
+      "neighborhoods": ["Tampa Palms", "Pebble Creek", "Hunter's Green", "Cross Creek"]
+    },
+    {
+      "id": "seminole-heights",
+      "name": "Seminole Heights",
+      "neighborhoods": ["Old Seminole Heights", "South Seminole Heights", "Hampton Terrace", "Ridgewood Park"]
+    },
+    {
+      "id": "ybor-city",
+      "name": "Ybor City",
+      "neighborhoods": ["Historic Ybor", "East Ybor", "Ybor Heights", "V.M. Ybor"]
+    },
+    {
+      "id": "channelside",
+      "name": "Channelside",
+      "neighborhoods": ["Channel District", "Harbour Island", "Downtown Tampa", "Water Street"]
+    }
+  ],
+  "blogPosts": [
+    {"id": "driveway-cost-tampa", "slug": "driveway-cost-tampa", "title": "How Much Does a Concrete Driveway Cost in Tampa? 2026 Price Guide"},
+    {"id": "concrete-vs-asphalt", "slug": "concrete-vs-asphalt", "title": "Concrete vs Asphalt: Which is Better for Florida's Climate?"},
+    {"id": "replacement-signs", "slug": "replacement-signs", "title": "5 Signs You Need Driveway Replacement"},
+    {"id": "grand-opening", "slug": "grand-opening", "title": "Tampa Concrete Pros: Serving the Tampa Bay Community"},
+    {"id": "florida-climate", "slug": "florida-climate", "title": "How Florida's Climate Affects Your Concrete"}
+  ],
+  "pricing": {
+    "perSqFtLow": "7",
+    "perSqFtHigh": "12",
+    "typicalSqFt": "600",
+    "typicalLow": "4200",
+    "typicalHigh": "7200",
+    "stampedPerSqFtLow": "12",
+    "stampedPerSqFtHigh": "18"
+  },
+  "seo": {
+    "gaId": "G-XXXXXXXXXX",
+    "gscVerification": "YOUR_VERIFICATION_CODE_HERE",
+    "ogImage": "/images/og-image.jpg"
+  },
+  "design": {
+    "colorPrimary": "#1B3A4B",
+    "colorSecondary": "#1FA2C0",
+    "colorAccent": "#4A6670",
+    "colorBackground": "#F5F7F8",
+    "fontDisplay": "Clash Display",
+    "fontBody": "Outfit"
+  }
+}
