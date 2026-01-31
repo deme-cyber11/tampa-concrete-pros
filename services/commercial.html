@@ -293,6 +293,84 @@
         "url": "https://tampaconcretepros.com/services/commercial.html"
     }
     </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://tampaconcretepros.com/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://tampaconcretepros.com/services/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Commercial Concrete",
+                "item": "https://tampaconcretepros.com/services/commercial.html"
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How long does a commercial concrete project take?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Project timelines vary based on scope. A typical parking lot takes 1-3 weeks, sidewalks 3-7 days, and warehouse floors 1-2 weeks. We provide detailed timelines during the proposal phase and offer night and weekend work to minimize business disruption."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Do you handle permits for commercial concrete projects?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we handle all permit applications and inspections as part of our service. Our team is experienced with Tampa-area commercial building codes, ADA requirements, and zoning regulations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the difference between commercial and residential concrete?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Commercial concrete is typically thicker (5-8 inches vs 4 inches), uses higher-strength mixes (4000+ PSI), includes heavy-duty reinforcement, and is designed for truck traffic, forklifts, and higher loads than residential applications."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can you work around our business hours?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we understand business continuity is essential. We offer flexible scheduling including nights, weekends, and phased installations that allow portions of your property to remain accessible during the project."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How long does commercial concrete last?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Properly installed commercial concrete lasts 30+ years with minimal maintenance. Unlike asphalt, concrete doesn't require regular seal coating and handles heavy loads and Florida heat without softening or rutting."
+                }
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -634,6 +712,36 @@
                 <div class="why-image">
                     <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Commercial concrete project in Tampa" loading="lazy">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Services Section -->
+    <section class="content-section" style="background: var(--color-surface); padding: 4rem 2rem;">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 class="section-title">Related Services</h2>
+            <p class="section-subtitle">We also offer residential concrete services for property managers and homeowners.</p>
+            <div class="benefits-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <a href="driveway-installation.html" class="benefit-card" style="text-decoration: none; color: inherit;">
+                    <h3>Driveway Installation</h3>
+                    <p>Residential driveway services for multi-family properties and HOA communities.</p>
+                </a>
+                <a href="patios-walkways.html" class="benefit-card" style="text-decoration: none; color: inherit;">
+                    <h3>Patios & Walkways</h3>
+                    <p>Common area walkways and patio installations for commercial properties.</p>
+                </a>
+                <a href="pool-decks.html" class="benefit-card" style="text-decoration: none; color: inherit;">
+                    <h3>Pool Decks</h3>
+                    <p>Community pool deck installations and resurfacing for HOAs and apartment complexes.</p>
+                </a>
+            </div>
+            <h3 style="font-size: 1.3rem; color: var(--color-primary); margin-top: 3rem; margin-bottom: 1rem;">Service Areas</h3>
+            <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">We serve commercial clients throughout the Tampa Bay area:</p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="../locations/channelside.html" style="background: white; padding: 0.75rem 1.25rem; border-radius: 6px; text-decoration: none; color: var(--color-primary); font-weight: 500; box-shadow: 0 2px 8px var(--color-shadow); transition: all 0.3s;">Channelside</a>
+                <a href="../locations/ybor-city.html" style="background: white; padding: 0.75rem 1.25rem; border-radius: 6px; text-decoration: none; color: var(--color-primary); font-weight: 500; box-shadow: 0 2px 8px var(--color-shadow); transition: all 0.3s;">Ybor City</a>
+                <a href="../locations/westchase.html" style="background: white; padding: 0.75rem 1.25rem; border-radius: 6px; text-decoration: none; color: var(--color-primary); font-weight: 500; box-shadow: 0 2px 8px var(--color-shadow); transition: all 0.3s;">Westchase</a>
+                <a href="../locations/brandon.html" style="background: white; padding: 0.75rem 1.25rem; border-radius: 6px; text-decoration: none; color: var(--color-primary); font-weight: 500; box-shadow: 0 2px 8px var(--color-shadow); transition: all 0.3s;">Brandon</a>
             </div>
         </div>
     </section>

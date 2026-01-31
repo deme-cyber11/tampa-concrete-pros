@@ -800,7 +800,14 @@
                 <h2>Request a Free Estimate</h2>
                 <p>Fill out the form below and we'll get back to you within 24 hours.</p>
 
-                <form action="#" method="POST">
+                <!-- IMPORTANT: Replace "xformid" below with your actual Formspree form ID -->
+                <!-- Get your form ID at https://formspree.io -->
+                <form action="https://formspree.io/f/xformid" method="POST">
+                    <!-- Hidden Formspree fields -->
+                    <input type="hidden" name="_form_name" value="Tampa Concrete Pros Contact Form">
+                    <input type="hidden" name="_subject" value="New Contact Form Submission - Tampa Concrete Pros">
+                    <input type="hidden" name="_next" value="https://tampaconcretepros.com/contact.html?submitted=true">
+
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Your Name *</label>
@@ -909,5 +916,31 @@
             </p>
         </div>
     </footer>
+
+    <!-- Thank you message script for form submission redirect -->
+    <script>
+        (function() {
+            // Check if form was just submitted (redirected back with ?submitted=true)
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('submitted') === 'true') {
+                // Create thank you message overlay
+                const thankYouDiv = document.createElement('div');
+                thankYouDiv.id = 'thank-you-message';
+                thankYouDiv.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(27, 58, 75, 0.95); display: flex; align-items: center; justify-content: center; z-index: 10000;';
+                thankYouDiv.innerHTML = `
+                    <div style="background: white; padding: 3rem; border-radius: 16px; text-align: center; max-width: 500px; margin: 2rem; box-shadow: 0 20px 60px rgba(0,0,0,0.3);">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#1FA2C0" stroke-width="2" style="margin-bottom: 1.5rem;">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22,4 12,14.01 9,11.01"/>
+                        </svg>
+                        <h2 style="color: #1B3A4B; font-family: 'Clash Display', sans-serif; font-size: 2rem; margin-bottom: 1rem;">Thank You!</h2>
+                        <p style="color: #5A6B75; font-size: 1.1rem; line-height: 1.7; margin-bottom: 1.5rem;">Your message has been received. We'll get back to you within 24 hours with your free estimate.</p>
+                        <button onclick="document.getElementById('thank-you-message').remove(); history.replaceState(null, '', window.location.pathname);" style="background: #1FA2C0; color: white; border: none; padding: 1rem 2rem; border-radius: 6px; font-size: 1rem; font-weight: 600; cursor: pointer; text-transform: uppercase; letter-spacing: 1px;">Close</button>
+                    </div>
+                `;
+                document.body.appendChild(thankYouDiv);
+            }
+        })();
+    </script>
 </body>
 </html>
