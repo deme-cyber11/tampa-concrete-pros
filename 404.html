@@ -28,13 +28,59 @@
 <body>
     <header>
         <nav>
-            <a href="/" class="logo">Tampa Concrete <span>Pros</span></a>
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7v10l10 5 10-5V7L12 2zm0 2.5L19 8l-7 3.5L5 8l7-3.5zM4 9.5l7 3.5v7l-7-3.5v-7zm16 0v7l-7 3.5v-7l7-3.5z"/>
+                    </svg>
+                </div>
+                <span class="logo-text">Tampa Concrete <span>Pros</span></span>
+            </a>
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
-                <li><a href="/services/driveway-installation.html">Services</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <span class="dropdown-arrow">&#9660;</span></a>
+                    <div class="dropdown-menu">
+                        <a href="/services/driveway-installation.html">Driveway Installation</a>
+                        <a href="/services/driveway-replacement.html">Driveway Replacement</a>
+                        <a href="/services/stamped-concrete.html">Stamped Concrete</a>
+                        <a href="/services/patios-walkways.html">Patios & Walkways</a>
+                        <a href="/services/pool-decks.html">Pool Decks</a>
+                        <a href="/services/commercial.html">Commercial Concrete</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Service Areas <span class="dropdown-arrow">&#9660;</span></a>
+                    <div class="dropdown-menu dropdown-menu-areas">
+                        <a href="/locations/south-tampa.html">South Tampa</a>
+                        <a href="/locations/hyde-park.html">Hyde Park</a>
+                        <a href="/locations/westchase.html">Westchase</a>
+                        <a href="/locations/carrollwood.html">Carrollwood</a>
+                        <a href="/locations/temple-terrace.html">Temple Terrace</a>
+                        <a href="/locations/brandon.html">Brandon</a>
+                        <a href="/locations/riverview.html">Riverview</a>
+                        <a href="/locations/wesley-chapel.html">Wesley Chapel</a>
+                        <a href="/locations/new-tampa.html">New Tampa</a>
+                        <a href="/locations/seminole-heights.html">Seminole Heights</a>
+                        <a href="/locations/ybor-city.html">Ybor City</a>
+                        <a href="/locations/channelside.html">Channelside</a>
+                        <a href="/locations/lutz.html">Lutz</a>
+                        <a href="/locations/plant-city.html">Plant City</a>
+                        <a href="/locations/clearwater.html">Clearwater</a>
+                        <a href="/locations/st-pete.html">St. Petersburg</a>
+                    </div>
+                </li>
+                <li><a href="/blog/">Blog</a></li>
                 <li><a href="/contact.html">Contact</a></li>
                 <li><a href="tel:8135552847" class="nav-cta">Call Now</a></li>
             </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </nav>
     </header>
 
@@ -61,7 +107,60 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Tampa Concrete Pros. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Tampa Concrete <span>Pros</span></h3>
+                <p>Tampa Bay's trusted concrete contractors. Licensed, insured, and committed to quality workmanship on every project.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="/services/driveway-installation.html">Driveway Installation</a></li>
+                    <li><a href="/services/driveway-replacement.html">Driveway Replacement</a></li>
+                    <li><a href="/services/stamped-concrete.html">Stamped Concrete</a></li>
+                    <li><a href="/services/patios-walkways.html">Patios & Walkways</a></li>
+                    <li><a href="/services/pool-decks.html">Pool Decks</a></li>
+                    <li><a href="/services/commercial.html">Commercial</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li><a href="/locations/south-tampa.html">South Tampa</a></li>
+                    <li><a href="/locations/hyde-park.html">Hyde Park</a></li>
+                    <li><a href="/locations/westchase.html">Westchase</a></li>
+                    <li><a href="/locations/carrollwood.html">Carrollwood</a></li>
+                    <li><a href="/locations/brandon.html">Brandon</a></li>
+                    <li><a href="/locations/wesley-chapel.html">Wesley Chapel</a></li>
+                    <li><a href="/locations/lutz.html">Lutz</a></li>
+                    <li><a href="/locations/clearwater.html">Clearwater</a></li>
+                    <li><a href="/locations/st-pete.html">St. Petersburg</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h4>Contact Us</h4>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    (813) 555-2847
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    info@tampaconcretepros.com
+                </p>
+                <p>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+                    Mon-Fri: 7AM-6PM, Sat: 8AM-3PM
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tampa Concrete Pros. All rights reserved.</p>
+            <p>
+                <a href="/privacy-policy.html">Privacy Policy</a> |
+                <a href="/terms-of-service.html">Terms of Service</a> |
+                <a href="/sitemap.html">Sitemap</a>
+            </p>
+        </div>
     </footer>
     <!-- Main JavaScript -->
     <script src="/js/main.js"></script>
