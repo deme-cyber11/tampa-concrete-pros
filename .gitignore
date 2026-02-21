@@ -15,6 +15,7 @@ Thumbs.db
 # Skills files (development only)
 skills*.zip
 skills_extracted/
+skills_extracted_2/
 
 # Design resource repos (external references)
 design-resources/

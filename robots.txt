@@ -6,7 +6,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://tampaconcretepros.com/sitemap.xml
+Sitemap: https://www.tampaconcretepros.com/sitemap.xml
 
 # Search engine bots
 User-agent: Googlebot
