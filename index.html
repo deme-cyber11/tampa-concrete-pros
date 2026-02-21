@@ -45,7 +45,7 @@
 
     <!-- Additional SEO Meta Tags -->
     <meta name="author" content="Tampa Concrete Pros">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="theme-color" content="#1B3A4B">
 
@@ -110,14 +110,58 @@
                 "closes": "15:00"
             }
         ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Concrete Services",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Driveway Installation"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Driveway Replacement"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stamped Concrete"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Patios & Walkways"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Pool Decks"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Concrete"}}
+            ]
+        },
         "areaServed": [
             {"@type": "City", "name": "Tampa"},
             {"@type": "City", "name": "South Tampa"},
             {"@type": "City", "name": "Brandon"},
+            {"@type": "City", "name": "Riverview"},
             {"@type": "City", "name": "Wesley Chapel"},
-            {"@type": "City", "name": "New Tampa"}
+            {"@type": "City", "name": "Lutz"},
+            {"@type": "City", "name": "Plant City"},
+            {"@type": "City", "name": "Clearwater"},
+            {"@type": "City", "name": "St. Petersburg"},
+            {"@type": "City", "name": "Carrollwood"},
+            {"@type": "City", "name": "Westchase"},
+            {"@type": "City", "name": "Temple Terrace"},
+            {"@type": "City", "name": "Seminole Heights"},
+            {"@type": "City", "name": "New Tampa"},
+            {"@type": "City", "name": "Hyde Park"},
+            {"@type": "City", "name": "Town 'N Country"}
         ],
         "sameAs": []
+    }
+    </script>
+
+    <!-- Speakable Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Tampa Concrete Pros | Licensed & Insured Concrete Contractors",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".hero h1", ".hero p", ".section-title", ".cta-section h2", ".cta-section p"]
+        },
+        "url": "https://www.tampaconcretepros.com/"
     }
     </script>
 </head>

@@ -44,7 +44,7 @@
 
     <!-- Additional SEO Meta Tags -->
     <meta name="author" content="Tampa Concrete Pros">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="theme-color" content="#1B3A4B">
 
@@ -179,6 +179,62 @@
         ]
     }
     </script>
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Install a Concrete Driveway",
+        "description": "Professional concrete driveway installation process used by Tampa Concrete Pros, from site preparation to curing.",
+        "totalTime": "P3D",
+        "estimatedCost": {
+            "@type": "MonetaryAmount",
+            "currency": "USD",
+            "value": "4800-9000"
+        },
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Site Preparation",
+                "text": "Excavate the area, removing soil and debris to the proper depth. Grade the site to ensure water drainage away from the home.",
+                "position": 1
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Base Installation",
+                "text": "Install and compact a gravel base to provide a stable foundation. Add steel reinforcement mesh or rebar for enhanced strength and crack prevention.",
+                "position": 2
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Concrete Pour",
+                "text": "Pour high-quality concrete mix formulated for Florida's climate. Level and finish the surface with precision for a smooth, even result.",
+                "position": 3
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Curing & Finishing",
+                "text": "Cut control joints to manage cracking. Apply curing compound and optional sealant for maximum durability and longevity. Allow 7 days before light vehicle traffic.",
+                "position": 4
+            }
+        ]
+    }
+    </script>
+
+    <!-- Speakable Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Driveway Installation Tampa",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".service-hero h1", ".service-hero p", ".section-title", ".definition-text"]
+        },
+        "url": "https://www.tampaconcretepros.com/services/driveway-installation.html"
+    }
+    </script>
+
     <!-- Animation Libraries CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">

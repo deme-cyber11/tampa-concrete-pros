@@ -44,7 +44,7 @@
 
     <!-- Additional SEO Meta Tags -->
     <meta name="author" content="Tampa Concrete Pros">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="theme-color" content="#1B3A4B">
 
@@ -179,6 +179,21 @@
         ]
     }
     </script>
+    
+    <!-- Speakable Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Commercial Concrete Tampa",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".service-hero h1", ".section-title"]
+        },
+        "url": "https://www.tampaconcretepros.com/services/commercial.html"
+    }
+    </script>
+
     <!-- Animation Libraries CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">

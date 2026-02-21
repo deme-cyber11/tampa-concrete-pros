@@ -220,6 +220,8 @@
   // ==========================================================================
   function initTilt() {
     if (typeof VanillaTilt === 'undefined') return;
+    // Disable tilt on touch/mobile devices
+    if (window.matchMedia('(pointer: coarse)').matches || window.innerWidth <= 768) return;
     const tiltElements = document.querySelectorAll('[data-tilt]');
     if (!tiltElements.length) return;
 
@@ -299,23 +301,35 @@
         handle.style.left = pos + '%';
       }
 
-      handle.addEventListener('mousedown', () => (isDragging = true));
-      handle.addEventListener('touchstart', () => (isDragging = true), { passive: true });
+      // Mouse events
+      handle.addEventListener('mousedown', (e) => { isDragging = true; e.preventDefault(); });
       window.addEventListener('mouseup', () => (isDragging = false));
-      window.addEventListener('touchend', () => (isDragging = false));
-
       window.addEventListener('mousemove', (e) => {
         if (!isDragging) return;
         setPosition(e.clientX);
       });
-      window.addEventListener(
-        'touchmove',
-        (e) => {
-          if (!isDragging) return;
-          setPosition(e.touches[0].clientX);
-        },
-        { passive: true }
-      );
+
+      // Touch events with full touch support
+      handle.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        e.preventDefault(); // prevent scroll while dragging
+      }, { passive: false });
+      window.addEventListener('touchend', () => (isDragging = false));
+      window.addEventListener('touchcancel', () => (isDragging = false));
+      window.addEventListener('touchmove', (e) => {
+        if (!isDragging) return;
+        e.preventDefault();
+        setPosition(e.touches[0].clientX);
+      }, { passive: false });
+
+      // Also allow tap-to-position on the slider itself
+      slider.addEventListener('click', (e) => {
+        setPosition(e.clientX);
+      });
+      slider.addEventListener('touchstart', (e) => {
+        if (e.target === handle || handle.contains(e.target)) return;
+        setPosition(e.touches[0].clientX);
+      }, { passive: true });
 
       // Set initial
       setPosition(slider.getBoundingClientRect().left + slider.getBoundingClientRect().width / 2);
@@ -387,7 +401,7 @@
   }
 
   // ==========================================================================
-  // 12. Navbar Scroll Effect
+  // 12. Navbar Scroll Effect + Mobile Menu
   // ==========================================================================
   function initNavScroll() {
     const header = document.querySelector('header');
@@ -409,6 +423,46 @@
       }
       lastScroll = currentScroll;
     });
+
+    // Mobile hamburger menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (menuToggle && navLinks) {
+      menuToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('active');
+        menuToggle.setAttribute('aria-expanded', isOpen);
+        // Toggle hamburger/close icon
+        if (isOpen) {
+          menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>';
+        } else {
+          menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+        }
+      });
+
+      // Mobile dropdown toggle on touch
+      document.querySelectorAll('.dropdown > a').forEach((dropdownToggle) => {
+        dropdownToggle.addEventListener('click', (e) => {
+          if (window.innerWidth <= 768) {
+            e.preventDefault();
+            const parent = dropdownToggle.parentElement;
+            // Close other open dropdowns
+            document.querySelectorAll('.dropdown.active').forEach((d) => {
+              if (d !== parent) d.classList.remove('active');
+            });
+            parent.classList.toggle('active');
+          }
+        });
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (window.innerWidth <= 768 && !header.contains(e.target)) {
+          navLinks.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+        }
+      });
+    }
   }
 
   // ==========================================================================
