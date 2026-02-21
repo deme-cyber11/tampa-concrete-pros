@@ -54,6 +54,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting/dist/splitting-cells.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Tampa Concrete Pros - Free Estimates">
+    <meta name="twitter:description" content="Contact Tampa Concrete Pros for a free estimate. Call (813) 555-2847 or fill out our form. Serving Tampa Bay with quality concrete work.">
+    <meta name="twitter:image" content="https://tampaconcretepros.com/images/hero/hero-main.webp">
 </head>
 <body>
     <header>
@@ -179,22 +183,22 @@
                     <div class="form-row">
                         <div class="form-group">
                             <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                            <input type="text" id="name" name="name" aria-label="Your full name" required placeholder="John Smith">
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required placeholder="(813) 555-0000">
+                            <input type="tel" id="phone" name="phone" aria-label="Your phone number" required placeholder="(813) 555-0000">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        <input type="email" id="email" name="email" aria-label="Your email address" required placeholder="john@example.com">
                     </div>
 
                     <div class="form-group">
                         <label for="service">Service Type *</label>
-                        <select id="service" name="service" required>
+                        <select id="service" name="service" aria-label="Service type" required>
                             <option value="">Select a service...</option>
                             <option value="driveway-installation">Driveway Installation</option>
                             <option value="driveway-replacement">Driveway Replacement</option>
@@ -208,7 +212,7 @@
 
                     <div class="form-group">
                         <label for="message">Project Details</label>
-                        <textarea id="message" name="message" placeholder="Tell us about your project - approximate size, current condition, any specific requirements..."></textarea>
+                        <textarea id="message" name="message" aria-label="Your message" placeholder="Tell us about your project - approximate size, current condition, any specific requirements..."></textarea>
                     </div>
 
                     <button type="submit" class="btn btn-primary">
