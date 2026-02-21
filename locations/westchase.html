@@ -48,6 +48,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css">
     <style>
         /* Coastal Pro Design System - Tampa Concrete Pros */
         :root {
@@ -916,6 +919,13 @@
         ]
     }
     </script>
+    <!-- Animation Libraries CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting/dist/splitting-cells.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css">
 </head>
 <body>
     <header>
@@ -962,8 +972,12 @@
                 <li><a href="../contact.html">Contact</a></li>
                 <li><a href="tel:8135552847" class="nav-cta">Call Now</a></li>
             </ul>
-            <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-                &#9776;
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
             </button>
         </nav>
     </header>
@@ -1131,7 +1145,7 @@
     <!-- Our Services & Nearby Areas Section -->
     <section style="background: var(--color-surface); padding: 4rem 2rem;">
         <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 class="section-title" style="font-size: 1.8rem;">Our Concrete Services</h2>
+            <h2 class="section-title split-text" style="font-size: 1.8rem;">Our Concrete Services</h2>
             <p style="color: var(--color-text-muted); margin-bottom: 1.5rem;">We offer a full range of concrete services in Westchase:</p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 3rem;">
                 <a href="../services/driveway-installation.html" class="service-item" style="text-decoration: none;">
@@ -1176,7 +1190,7 @@
         </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section" data-aos="fade-up">
         <h2>Ready to Start Your Westchase Project?</h2>
         <p>Get a free, no-obligation quote for your concrete project. Our team is ready to help transform your Westchase property.</p>
         <a href="tel:8135552847" class="btn btn-primary">
@@ -1240,5 +1254,18 @@
             </p>
         </div>
     </footer>
+    <!-- Main JavaScript -->
+    <script src="/js/main.js"></script>
+    <!-- Animation Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+    <script src="/js/animations.js"></script>
 </body>
 </html>

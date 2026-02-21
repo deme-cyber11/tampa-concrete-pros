@@ -59,6 +59,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://api.fontshare.com/v2/css?f[]=clash-display@400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/css/main.css">
     <style>
         /* Coastal Pro Design System - Tampa Concrete Pros */
         :root {
@@ -1182,6 +1185,13 @@
         ]
     }
     </script>
+    <!-- Animation Libraries CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/splitting/dist/splitting-cells.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1/dist/lenis.css">
 </head>
 <body>
     <header>
@@ -1228,8 +1238,12 @@
                 <li><a href="../contact.html">Contact</a></li>
                 <li><a href="tel:8135552847" class="nav-cta">Call Now</a></li>
             </ul>
-            <button class="menu-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')">
-                &#9776;
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
             </button>
         </nav>
     </header>
@@ -1273,11 +1287,46 @@
                     <a href="../contact.html" class="btn btn-secondary">Get Free Quote</a>
                 </div>
             </div>
+            <div class="hero-form">
+                <form class="service-sidebar-form" action="https://formspree.io/f/your-form-id" method="POST">
+                    <h3>Get Your Free Quote</h3>
+                    <p class="form-subtitle">No obligation estimate within 24 hours</p>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-input" placeholder="Your Name *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" class="form-input" placeholder="Phone Number *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-input" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <select name="service" class="form-input" required>
+                            <option value="">Select Service *</option>
+                            <option value="driveway-installation" selected>Driveway Installation</option>
+                            <option value="driveway-replacement">Driveway Replacement</option>
+                            <option value="stamped-concrete">Stamped Concrete</option>
+                            <option value="patios-walkways">Patios & Walkways</option>
+                            <option value="pool-decks">Pool Decks</option>
+                            <option value="commercial">Commercial</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" class="form-input" placeholder="Tell us about your project..." rows="3"></textarea>
+                    </div>
+                    <input type="hidden" name="source" value="Driveway Installation Page">
+                    <button type="submit" class="btn btn-primary">Request Free Quote</button>
+                    <p class="form-note">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        Your information is secure and never shared
+                    </p>
+                </form>
+            </div>
         </div>
     </section>
 
-    <section class="content-section">
-        <h2 class="section-title">Benefits of a New Concrete Driveway</h2>
+    <section class="content-section" data-aos="fade-up">
+        <h2 class="section-title split-text">Benefits of a New Concrete Driveway</h2>
 
         <p class="definition-text"><strong>A concrete driveway</strong> is a paved surface made from Portland cement, aggregate, and water that provides a durable, low-maintenance entrance to residential or commercial properties. Concrete driveways are the most popular driveway material in the United States, chosen for their longevity, strength, and versatility in design options.</p>
 
@@ -1336,7 +1385,7 @@
 
     <section class="process-section">
         <div class="process-container">
-            <h2 class="section-title">Our Installation Process</h2>
+            <h2 class="section-title split-text">Our Installation Process</h2>
             <p class="section-subtitle">We follow a proven 4-step process to ensure your new driveway exceeds expectations and lasts for decades.</p>
 
             <div class="key-fact" style="background: rgba(255,255,255,0.9);">
@@ -1370,7 +1419,7 @@
     </section>
 
     <section class="why-section">
-        <h2 class="section-title">Why Choose Tampa Concrete Pros</h2>
+        <h2 class="section-title split-text">Why Choose Tampa Concrete Pros</h2>
         <p class="section-subtitle">With over a decade of experience in the Tampa Bay area, we deliver exceptional driveway installations that stand the test of time.</p>
 
         <div class="key-fact">
@@ -1412,7 +1461,7 @@
 
     <section class="faq-section">
         <div class="faq-container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <h2 class="section-title split-text">Frequently Asked Questions</h2>
             <p class="section-subtitle">Get answers to common questions about concrete driveway installation in Tampa.</p>
 
             <div class="faq-item">
@@ -1468,9 +1517,9 @@
     </section>
 
     <!-- Related Services Section -->
-    <section class="content-section" style="background: var(--color-surface); padding: 4rem 2rem;">
+    <section class="content-section" data-aos="fade-up" style="background: var(--color-surface); padding: 4rem 2rem;">
         <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 class="section-title">Related Services</h2>
+            <h2 class="section-title split-text">Related Services</h2>
             <p class="section-subtitle">Explore our other concrete services to complete your outdoor project.</p>
             <div class="benefits-grid" style="grid-template-columns: repeat(3, 1fr);">
                 <a href="driveway-replacement.html" class="benefit-card" style="text-decoration: none; color: inherit;">
@@ -1497,7 +1546,7 @@
         </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section" data-aos="fade-up">
         <h2>Ready for Your New Driveway?</h2>
         <p>Get a free, no-obligation quote for your driveway installation project. Our team is ready to help you enhance your home's curb appeal.</p>
         <a href="tel:8135552847" class="btn btn-primary">
@@ -1581,5 +1630,18 @@
             });
         });
     </script>
+    <!-- Main JavaScript -->
+    <script src="/js/main.js"></script>
+    <!-- Animation Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/splitting/dist/splitting.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2/dist/aos.js"></script>
+    <script src="/js/animations.js"></script>
 </body>
 </html>
