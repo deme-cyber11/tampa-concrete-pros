@@ -1,21 +1,25 @@
-# OS files
+# Business strategy & sensitive docs
+**/discovery-call-notes*
+**/growth-plan*
+**/GAME-PLAN*
+**/COMPETITOR-ANALYSIS*
+**/PROJECT-STATUS*
+**/PROJECT-LOG*
+**/keyword-strategy*
+**/onboarding-guide*
+**/CITATIONS-READY*
+**/SUBMISSION-CHECKLIST*
+CLAUDE.md
+
+# Dev tooling
+skills/
+skills_extracted*/
+Claude-Skills-Library/
+node_modules/
+
+# System files
 .DS_Store
-Thumbs.db
-
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Local development
-.env
-.env.local
-
-# Skills files (development only)
-skills*.zip
-skills_extracted/
-skills_extracted_2/
-
-# Design resource repos (external references)
-design-resources/
+desktop.ini
+*.zip
+tmp/
+temp_*/
