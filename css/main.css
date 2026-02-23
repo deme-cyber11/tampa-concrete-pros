@@ -1779,7 +1779,7 @@ footer::before {
     }
 
     .dropdown-menu a {
-        color: rgba(255,255,255,0.85);
+        color: var(--color-text, #1a1a1a);
         padding: 0.75rem 1.25rem;
         border-bottom-color: rgba(255,255,255,0.05);
         font-size: 0.95rem;
@@ -1792,7 +1792,7 @@ footer::before {
     }
 
     .dropdown-menu-areas a {
-        color: rgba(255,255,255,0.85);
+        color: var(--color-text, #1a1a1a);
         border-right-color: rgba(255,255,255,0.05);
         border-bottom-color: rgba(255,255,255,0.05);
     }
@@ -1992,6 +1992,30 @@ footer::before {
     header, footer, .cta-section, .preloader { display: none; }
     .hero { min-height: auto; padding: 2rem; }
     body { color: #000; background: #fff; }
+}
+
+/* ==========================================================================
+   22b. Content Spacing Fixes
+   ========================================================================== */
+.content-section h2 {
+    margin-top: 3rem;
+}
+
+.content-section h3 {
+    margin-top: 2.5rem;
+}
+
+/* ==========================================================================
+   22c. Hero Gap Fix
+   ========================================================================== */
+.page-hero + section {
+    padding-top: 3rem;
+}
+
+@media (max-width: 768px) {
+    .page-hero + section {
+        padding-top: 2rem;
+    }
 }
 
 /* ==========================================================================
