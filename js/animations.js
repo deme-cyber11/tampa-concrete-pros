@@ -46,8 +46,8 @@
 
     gsap.registerPlugin(ScrollTrigger);
 
-    // Fade-up sections
-    gsap.utils.toArray('.gsap-fade-up, [data-aos="fade-up"]').forEach((el) => {
+    // Fade-up sections (GSAP-class-only — AOS handles [data-aos] elements separately)
+    gsap.utils.toArray('.gsap-fade-up').forEach((el) => {
       gsap.from(el, {
         scrollTrigger: {
           trigger: el,
@@ -62,8 +62,8 @@
       });
     });
 
-    // Fade-in-left
-    gsap.utils.toArray('[data-aos="fade-right"]').forEach((el) => {
+    // Fade-in-left (GSAP-class-only)
+    gsap.utils.toArray('.gsap-fade-right').forEach((el) => {
       gsap.from(el, {
         scrollTrigger: { trigger: el, start: 'top 85%' },
         x: -80,
@@ -73,8 +73,8 @@
       });
     });
 
-    // Fade-in-right
-    gsap.utils.toArray('[data-aos="fade-left"]').forEach((el) => {
+    // Fade-in-right (GSAP-class-only)
+    gsap.utils.toArray('.gsap-fade-left').forEach((el) => {
       gsap.from(el, {
         scrollTrigger: { trigger: el, start: 'top 85%' },
         x: 80,

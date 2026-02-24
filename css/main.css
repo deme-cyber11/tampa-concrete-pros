@@ -2054,3 +2054,14 @@ footer::before {
     .mobile-cta-bar { display: flex; }
     body { padding-bottom: 70px; }
 }
+
+/* AOS fallback - ensure content visible even if JS fails or GSAP/AOS conflict */
+[data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+}
+.aos-animate [data-aos],
+.aos-init [data-aos] {
+    opacity: 1 !important;
+}
