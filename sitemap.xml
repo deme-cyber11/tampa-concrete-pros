@@ -82,9 +82,9 @@
     <!-- Location Pages -->
     <url>
         <loc>https://tampaconcretepros.com/locations/brandon.html</loc>
-        <lastmod>2026-02-23</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/carrollwood.html</loc>
@@ -100,9 +100,9 @@
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/clearwater.html</loc>
-        <lastmod>2026-02-23</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/hyde-park.html</loc>
@@ -112,9 +112,9 @@
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/lutz.html</loc>
-        <lastmod>2026-02-23</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/new-tampa.html</loc>
@@ -130,9 +130,9 @@
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/riverview.html</loc>
-        <lastmod>2026-02-23</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/seminole-heights.html</loc>
@@ -153,6 +153,12 @@
         <priority>0.6</priority>
     </url>
     <url>
+        <loc>https://tampaconcretepros.com/locations/st-petersburg.html</loc>
+        <lastmod>2026-03-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
         <loc>https://tampaconcretepros.com/locations/temple-terrace.html</loc>
         <lastmod>2026-02-23</lastmod>
         <changefreq>monthly</changefreq>
@@ -160,9 +166,9 @@
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/wesley-chapel.html</loc>
-        <lastmod>2026-02-23</lastmod>
+        <lastmod>2026-03-09</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
+        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://tampaconcretepros.com/locations/westchase.html</loc>
