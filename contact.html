@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMW0BD8ZN4"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-EMW0BD8ZN4');
-</script>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Tampa Concrete Pros - Free Estimates</title>
     <meta name="description" content="Contact Tampa Concrete Pros for a free estimate. Call (813) 705-9021 or fill out our form. Serving Tampa Bay with quality concrete work.">
@@ -222,7 +214,11 @@ gtag('config', 'G-EMW0BD8ZN4');
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" aria-label="Your phone number" required placeholder="(813) 555-0000">
+                            <input type="tel" id="phone" name="phone" aria-label="Your phone number" required placeholder="(813) 705-9021">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="you@example.com">
+                            </div>
                         </div>
                     </div>
 
@@ -245,7 +241,12 @@ gtag('config', 'G-EMW0BD8ZN4');
                         <textarea id="message" name="message" aria-label="Your message" placeholder="Tell us about your project - approximate size, current condition, any specific requirements..."></textarea>
                     </div>
 
-                    <button type="submit" class="btn btn-primary">
+                    
+                            <div class="form-group">
+                                <label for="address">Service Address *</label>
+                                <input type="text" id="address" name="address" required placeholder="123 Main St, City, State">
+                            </div>
+                            <button type="submit" class="btn btn-primary">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
                         </svg>
