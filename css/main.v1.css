@@ -2155,3 +2155,5 @@ footer::before {
   font-style: normal;
 }
 /* END LOGO-GEN */
+
+input, select, textarea { font-family: inherit; font-size: 16px; }
