@@ -121,3 +121,27 @@ body.dm .two-col-grid > div[style*="min-height"] img { height: 100% !important; 
 body.dm { --section-pad: clamp(56px, 6vw, 88px); }
 body.dm .two-col-grid > div[style*="min-height"] { position: relative; }
 body.dm .two-col-grid > div[style*="min-height"] img { position: absolute; inset: 0; width: 100% !important; height: 100% !important; min-height: 0; object-fit: cover; }
+
+/* Round 2 (2026-10-01): phone and tablet. Everything below is inside max-width media queries,
+   so the 1440 desktop layout is unchanged. */
+@media (max-width: 1024px) {
+  body.dm .nav__logo { display: inline-block; padding: 6px 0; }
+  body.dm .nav__links a { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  body.dm .footer__contact-item a, body.dm .footer__links a { min-height: 44px; display: inline-flex; align-items: center; }
+  body.dm .footer__links { gap: 2px; }
+  body.dm span > a[href^="tel:"] { min-height: 44px; display: inline-flex; align-items: center; }
+}
+@media (max-width: 768px) {
+  body.dm .nav__toggle { color: #fff; min-width: 44px; min-height: 44px; }
+  body.dm .nav__links.open { gap: 4px; }
+  body.dm .nav__links.open a { min-height: 44px; padding: 0 12px; }
+}
+@media (max-width: 430px) {
+  body.dm form p[style*="font-size:0.8125rem"] { font-size: .9375rem !important; }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  body.dm .dm-svc-grid, body.dm .dm-steps { grid-template-columns: repeat(2, 1fr); }
+  body.dm .bento, body.dm .bento:not(.dm-bento-even), body.dm .dm-bento-even { grid-template-columns: repeat(2, 1fr) !important; }
+  body.dm .bento > .bento__card { min-height: 330px; }
+  body.dm .footer__grid { grid-template-columns: 1fr 1fr; }
+}
