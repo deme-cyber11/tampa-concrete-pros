@@ -29,6 +29,7 @@ button{cursor:pointer;font-family:inherit;border:none}
 .card__title-icon{width:28px;height:28px;background:rgba(249,115,22,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .card__title-icon svg{width:15px;height:15px;stroke:#f97316;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.row:not(:last-child){margin-bottom:16px}
 @media(max-width:520px){.row{grid-template-columns:1fr}}
 .field{margin-bottom:16px}
 .field:last-child{margin-bottom:0}
@@ -141,7 +142,7 @@ textarea{resize:vertical;min-height:88px;line-height:1.6}
         </div>
         <div class="field">
           <label for="state">State <span class="req">*</span></label>
-          <input type="text" id="state" name="state" required placeholder="TX" maxlength="20" autocomplete="address-level1" oninput="this.value=this.value.toUpperCase()" onchange="this.value=this.value.toUpperCase()" pattern="[A-Za-z .]{2,20}" title="State — 2-letter code or full name">
+          <input type="text" id="state" name="state" required placeholder="FL" maxlength="20" autocomplete="address-level1" oninput="this.value=this.value.toUpperCase()" onchange="this.value=this.value.toUpperCase()" pattern="[A-Za-z .]{2,20}" title="State — 2-letter code or full name">
         </div>
       </div>
       <div class="field" style="margin-bottom:0">

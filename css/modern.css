@@ -145,3 +145,11 @@ body.dm .two-col-grid > div[style*="min-height"] img { position: absolute; inset
   body.dm .bento > .bento__card { min-height: 330px; }
   body.dm .footer__grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* 2026-10-07: bento card text sat in an absolutely positioned box anchored to the bottom, so on the
+   narrow 4-column cards a two-line title and description ran off the top of the card and were
+   clipped. The content now flows at the bottom of the card and the card grows to fit it. */
+body.dm .bento__card { display: flex; flex-direction: column; justify-content: flex-end; }
+body.dm .bento__content { position: relative; padding: 28px; }
+body.dm .bento__card::after { background: linear-gradient(to top, rgba(15,23,42,.94) 0%, rgba(15,23,42,.62) 55%, rgba(15,23,42,.25) 100%); }
+
