@@ -2,6 +2,19 @@
 """Build all remaining v2.5 pages for Tampa Concrete Pros."""
 
 import os
+import sys
+
+# Lead disclosure (Costa approved 2026-10-09, live since e4c14af): the privacy paragraph, the line
+# under every lead form and the D24 page attribution block. The words and markup have ONE source,
+# tools/lead_disclosure.py in rank-and-rent-system, so a rebuild writes them byte for byte as the
+# live pages carry them, and can never put the false "we do not sell" sentence back.
+_RR = os.environ.get("RANKANDRENT_ROOT", "/Users/costademetral/RankAndRent")
+sys.path.insert(0, os.path.join(_RR, "tools"))
+try:
+    import lead_disclosure as LD
+except Exception as e:  # never build pages without the disclosure
+    sys.exit(f"Cannot import lead_disclosure from {_RR}/tools ({e}). Set RANKANDRENT_ROOT to the "
+             "rank-and-rent-system checkout. Refusing to build pages without the lead disclosure.")
 
 SITE = "/Users/costa.demetral/Documents/Rank and Rent $/My-RR-Sites/Tampa Concrete Pros"
 PHONE = "(813) 705-9021"
@@ -177,6 +190,10 @@ def cta_section():
 </section>"""
 
 def write_page(filepath, content):
+    # Same transforms the 2026-10-09 sweep applied to the live pages: the line under every
+    # lead form (/ingest forms only) and the D24 block (pages with a form or a tel: link).
+    content, _ = LD.insert_form_notice(content, rel=filepath)
+    content = LD.add_d24(content, filepath)
     full_path = os.path.join(SITE, filepath)
     os.makedirs(os.path.dirname(full_path), exist_ok=True)
     with open(full_path, 'w') as f:
@@ -389,7 +406,8 @@ def build_privacy():
       <h2>1. Information We Collect</h2>
       <p>We collect information you provide directly to us, including your name, phone number, email address, and property address when you request a quote or contact us through our website.</p>
       <h2 style="margin-top:2rem;">2. How We Use Your Information</h2>
-      <p>We use the information we collect to: respond to your inquiry, provide estimates and services, communicate about your project, and improve our website and services. We do not sell your personal information to third parties.</p>
+      <p>We use the information we collect to: respond to your inquiry, provide estimates and services, communicate about your project, and improve our website and services.</p>
+      <p>{LD.PRIVACY_PARAGRAPH}</p>
       <h2 style="margin-top:2rem;">3. Cookies</h2>
       <p>Our website may use cookies and similar tracking technologies to enhance your experience. You can instruct your browser to refuse cookies, though some features may not function properly as a result.</p>
       <h2 style="margin-top:2rem;">4. Data Security</h2>
