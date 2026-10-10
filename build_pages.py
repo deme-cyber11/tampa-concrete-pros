@@ -4,10 +4,12 @@
 import os
 import sys
 
-# Lead disclosure (Costa approved 2026-10-09, live since e4c14af): the privacy paragraph, the line
-# under every lead form and the D24 page attribution block. The words and markup have ONE source,
-# tools/lead_disclosure.py in rank-and-rent-system, so a rebuild writes them byte for byte as the
-# live pages carry them, and can never put the false "we do not sell" sentence back.
+# Lead disclosure (Costa approved 2026-10-09, live since e4c14af): the privacy paragraph and the D24
+# page attribution block. The words and markup have ONE source, tools/lead_disclosure.py in
+# rank-and-rent-system, so a rebuild writes them byte for byte as the live pages carry them, and can
+# never put the false "we do not sell" sentence back. The line under every lead form was WITHDRAWN
+# the same evening (Costa: no wording beside a form, button, phone link or CTA saying a contractor
+# fulfils the request); lead_disclosure.py check fails a page that carries it.
 _RR = os.environ.get("RANKANDRENT_ROOT", "/Users/costademetral/RankAndRent")
 sys.path.insert(0, os.path.join(_RR, "tools"))
 try:
@@ -190,9 +192,8 @@ def cta_section():
 </section>"""
 
 def write_page(filepath, content):
-    # Same transforms the 2026-10-09 sweep applied to the live pages: the line under every
-    # lead form (/ingest forms only) and the D24 block (pages with a form or a tel: link).
-    content, _ = LD.insert_form_notice(content, rel=filepath)
+    # Same transform the 2026-10-09 sweep applied to the live pages: the D24 block (pages with a
+    # form or a tel: link). No line is added beside a form (withdrawn 2026-10-09).
     content = LD.add_d24(content, filepath)
     full_path = os.path.join(SITE, filepath)
     os.makedirs(os.path.dirname(full_path), exist_ok=True)
