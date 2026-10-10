@@ -408,7 +408,7 @@ def build_privacy():
       <p>We collect information you provide directly to us, including your name, phone number, email address, and property address when you request a quote or contact us through our website.</p>
       <h2 style="margin-top:2rem;">2. How We Use Your Information</h2>
       <p>We use the information we collect to: respond to your inquiry, provide estimates and services, communicate about your project, and improve our website and services.</p>
-      <p>{LD.PRIVACY_PARAGRAPH}</p>
+      <p>{LD.privacy_paragraph_for("tampaconcretepros.com")}</p>
       <h2 style="margin-top:2rem;">3. Cookies</h2>
       <p>Our website may use cookies and similar tracking technologies to enhance your experience. You can instruct your browser to refuse cookies, though some features may not function properly as a result.</p>
       <h2 style="margin-top:2rem;">4. Data Security</h2>
